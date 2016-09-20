@@ -1,0 +1,26 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "no-const-assign": 2,
+    "react/no-multi-comp": 0,
+    "react/prop-types": 2,
+    "react/jsx-no-bind": 2,
+    "comma-dangle": [1, "always-multiline"],
+    "new-cap": [2, {"capIsNewExceptions": ["Radium", "DragDropContext", "DropTarget", "DragSource"]}],
+    "key-spacing": [1, {"mode": "minimum"}],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "no-else-return": 0,
+
+    // allow funtions
+    "no-use-before-define": [2, "nofunc"]
+  },
+  "plugins": [
+    "react"
+  ]
+}
